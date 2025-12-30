@@ -1,30 +1,56 @@
-.gantt {
-  margin-top: 20px;
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.85em;
+  color: #555;
 }
 
-.row {
+.gantt .row {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.row span {
+.gantt .row span {
   width: 80px;
   font-weight: bold;
 }
 
+.track {
+  position: relative;
+  width: 100%;
+  height: 34px;
+  background: #eaecef;
+  border-radius: 6px;
+}
+
 .bar {
-  height: 32px;
-  line-height: 32px;
+  position: absolute;
+  height: 34px;
+  line-height: 34px;
   padding-left: 10px;
   color: #fff;
   border-radius: 6px;
-  width: 70%;
+  width: 12.5%;
+  font-size: 0.9em;
 }
 
+/* Offsets (cumulative timeline) */
+.w1 { left: 0%; }
+.w2 { left: 12.5%; }
+.w3 { left: 25%; }
+.w4 { left: 37.5%; }
+.w5 { left: 50%; }
+.w6 { left: 62.5%; }
+.w7 { left: 75%; }
+.w8 { left: 87.5%; }
+
+/* Colors */
 .frontend { background: #4a90e2; }
 .backend  { background: #7b61ff; }
 .api      { background: #00b894; }
 .python   { background: #e17055; }
 .pwa      { background: #6c5ce7; }
 .final    { background: #2d3436; }
+
