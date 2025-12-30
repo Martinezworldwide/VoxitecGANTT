@@ -1,0 +1,30 @@
+.gantt {
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.row span {
+  width: 80px;
+  font-weight: bold;
+}
+
+.bar {
+  height: 32px;
+  line-height: 32px;
+  padding-left: 10px;
+  color: #fff;
+  border-radius: 6px;
+  width: 70%;
+}
+
+.frontend { background: #4a90e2; }
+.backend  { background: #7b61ff; }
+.api      { background: #00b894; }
+.python   { background: #e17055; }
+.pwa      { background: #6c5ce7; }
+.final    { background: #2d3436; }
